@@ -18,8 +18,8 @@ def takePicture(cameraObj,seconds=2,photos=4,resolution=(2592, 1944)):
         for i in range(photos):
             sleep(seconds)
             #check storage before taking a picture
-            cameraObj.capture_file(photo_path%i)
-            #/home/pi/Desktop/image%s.jpg
+            cameraObj.capture_file(photo_path%photoCount)
+            #And replace this %i if you replace the photo_path
             #I guess I could make a function for it in case it runs out of space
             photoCount+=1
         endPreview(cameraObj)
@@ -85,4 +85,3 @@ def main():
     playAround()
 main()
 #Burn wire: If the balloon is stuck at a certain altitude of x amount of seconds then cut the rope
-    
