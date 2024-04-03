@@ -26,15 +26,17 @@ def takePicture(cameraObj,seconds=2,photos=112,resolution=(2592, 1944)):
     else:
         return "Photo not taken because seconds given is: "+str(seconds)
     #Solar Eclipse time 3 minutes 45 seconds -> 225/2 -> 112 Pictures approximately
-def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),camQuality=Quality.VERY_HIGH):
+def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),frames=30,camQuality=Quality.HIGH):
     #Note: Takes about 5GB for OS system. 16 GB for the entire SD card = 12.5GB
-    #Note: What is an encoder
-    #seconds defaults to the amount of time during the solar eclipse
-    #video_config=cameraObj.create_video_configuration(main=getMainSettings(resolution),controls=getControlSettings(frameRate=60,afSpeed="Fast"))
-    video_config=cameraObj.create_video_configuration(controls=getControlSettings(frameRate=60))#afSpeed="Fast"))
+    #Note: Consider different Encoder
+    """
+    cameraObj= Camera Object
+    camQuality = Sets the quality
+    """
+    video_config=cameraObj.create_video_configuration(buffer_count=6,main=getMainSettings(resolution),controls=getControlSettings(frameRate=30))
     cameraObj.configure(video_config)
-    video_encoder=H264Encoder()
-    video_path="/home/ubnl/Documents/create_video.h264"
+    video_encoder=H264Encoder(10000000)###See if this encoder thin is necessary
+    video_path="/home/ubnl/Documents/create_video.mp4"
     enablePreview(cameraObj)
     print("Recording soon")
     sleep(1)
@@ -47,13 +49,13 @@ def enablePreview(cam):
     cam.start_preview(Preview.QTGL)
 def endPreview(cam):
     cam.stop_preview()
-def getControlSettings(frameRate=30,afSpeed="Normal"):
+def getControlSettings(frameRate=30):
     """
     Returns back a dictionary of controls to be set
     Refer to: "Camera Controls" in the PiCamera2 documentation
     frameRate=30(default)
     """
-    return {"FrameRate":frameRate,"AfMode":afSpeed}
+    return {"FrameRate":frameRate}
 def getMainSettings(size=(1440,1080)):
     """
     Returns the settings used in main
@@ -64,12 +66,17 @@ def getMainSettings(size=(1440,1080)):
     
 def playAround():
     camera=Picamera2()
-    takeVideo(camera)
+    takeVideo(camera,20,(1536,864),15)
     
 def main():
+    """
+    Should I enable HDR?
+    Note: Low RAM Amount
+    """
     print("E")
     playAround()
 main()
     #takePicture(camera,seconds=2,photos=5)
     #takeVideo(camera,seconds=10)=
 #Burn wire: If the balloon is stuck at a certain altitude of x amount of seconds then cut the rope
+    
