@@ -2,27 +2,25 @@ from picamera2 import Picamera2,Preview
 from picamera2.encoders import H264Encoder, Quality
 from time import sleep
 
-
+global photoCount
 photoCount=0
 #This is for when we manage photos
-def takePicture(cameraObj,seconds=2,photos=112,resolution=(2592, 1944)):
+def takePicture(cameraObj,seconds=2,photos=4,resolution=(2592, 1944)):
     """
     cameraObj=A camera object to take a picture with 
-    seconds = Must be over 2 seconds. Takes a picture.
+    seconds = Must be over 2 seconds. Takes a picture. Seconds in between
     """
-    photo_path='/home/pi/Desktop/image%s.jpg'
-    cameraObj.resolution = resolution
-    cameraObj.framerate = 15
+    photo_path='/home/ubnl/Documents/image%s.jpg'
     if(seconds >= 2):
-        cameraObj.start_preview()
+        enablePreview(cameraObj)
         for i in range(photos):
             sleep(seconds)
             #check storage before taking a picture
-            cameraObj.capture(photo_path%photoCount)
+            cameraObj.capture_file(photo_path,i)
             #/home/pi/Desktop/image%s.jpg
             #I guess I could make a function for it in case it runs out of space
             photoCount+=1
-        cameraObj.close_preview()
+        endPreview(cameraObj)
     else:
         return "Photo not taken because seconds given is: "+str(seconds)
     #Solar Eclipse time 3 minutes 45 seconds -> 225/2 -> 112 Pictures approximately
@@ -36,11 +34,11 @@ def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),frames=30,camQuality=
     video_config=cameraObj.create_video_configuration(buffer_count=6,main=getMainSettings(resolution),controls=getControlSettings(frameRate=30))
     cameraObj.configure(video_config)
     video_encoder=H264Encoder(10000000)###See if this encoder thin is necessary
-    video_path="/home/ubnl/Documents/create_video.mp4"
+    video_path="/home/ubnl/Documents/create_video.h264"
     enablePreview(cameraObj)
     print("Recording soon")
     sleep(1)
-    cameraObj.start_recording(video_encoder,video_path)#,quality=camQuality)
+    cameraObj.start_recording(video_encoder,video_path,quality=camQuality)
     sleep(seconds)
     cameraObj.stop_recording()
     endPreview(cameraObj)
@@ -66,8 +64,8 @@ def getMainSettings(size=(1440,1080)):
     
 def playAround():
     camera=Picamera2()
-    takeVideo(camera,20,(1536,864),15)
-    
+    #takeVideo(camera,20,(800,500),120)
+    takePicture(camera)
 def main():
     """
     Should I enable HDR?
