@@ -8,15 +8,17 @@ photoCount=0
 def takePicture(cameraObj,seconds=2,photos=4,resolution=(2592, 1944)):
     """
     cameraObj=A camera object to take a picture with 
-    seconds = Must be over 2 seconds. Takes a picture. Seconds in between
+    seconds = Must be over 2 seconds. Takes a picture. Seconds in between each photo shot.
     """
     photo_path='/home/ubnl/Documents/image%s.jpg'
+    #If PhotoPath crashes just set Documents/image%s.jpg -> Documents/image1.jpg
+    #Note this will overwrite the previous photo each time
     if(seconds >= 2):
         enablePreview(cameraObj)
         for i in range(photos):
             sleep(seconds)
             #check storage before taking a picture
-            cameraObj.capture_file(photo_path,i)
+            cameraObj.capture_file(photo_path%i)
             #/home/pi/Desktop/image%s.jpg
             #I guess I could make a function for it in case it runs out of space
             photoCount+=1
@@ -29,7 +31,10 @@ def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),frames=30,camQuality=
     #Note: Consider different Encoder
     """
     cameraObj= Camera Object
+    seconds=duration of the video
     camQuality = Sets the quality
+    frames=Frames of the video
+    resolution = Size of the image
     """
     video_config=cameraObj.create_video_configuration(buffer_count=6,main=getMainSettings(resolution),controls=getControlSettings(frameRate=30))
     cameraObj.configure(video_config)
@@ -44,8 +49,14 @@ def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),frames=30,camQuality=
     endPreview(cameraObj)
     print("End preview")
 def enablePreview(cam):
+    """
+    Creates a preview via camera passed in
+    """
     cam.start_preview(Preview.QTGL)
 def endPreview(cam):
+    """
+    Disables the preview via same camera
+    """
     cam.stop_preview()
 def getControlSettings(frameRate=30):
     """
@@ -58,23 +69,20 @@ def getMainSettings(size=(1440,1080)):
     """
     Returns the settings used in main
     Appendix B: Camera configuration parameters
-    
     """
     return {"size":size}
     
 def playAround():
     camera=Picamera2()
-    #takeVideo(camera,20,(800,500),120)
+    #takeVideo(camera,seconds=10,resolution=(800,500),frames=120,camQuality=Quality.HIGH)
     takePicture(camera)
 def main():
     """
     Should I enable HDR?
     Note: Low RAM Amount
     """
-    print("E")
+    print("Running Code")
     playAround()
 main()
-    #takePicture(camera,seconds=2,photos=5)
-    #takeVideo(camera,seconds=10)=
 #Burn wire: If the balloon is stuck at a certain altitude of x amount of seconds then cut the rope
     
