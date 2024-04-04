@@ -26,6 +26,16 @@ def takePicture(cameraObj,seconds=2,photos=4,resolution=(2592, 1944)):
     else:
         return "Photo not taken because seconds given is: "+str(seconds)
     #Solar Eclipse time 3 minutes 45 seconds -> 225/2 -> 112 Pictures approximately
+    # Configure the camera
+    #video_config = picam2.create_video_configuration(
+    #    sensor={"output_size": (2304, 1296)},
+    #    main={"size": (1536, 864)},
+    #    controls={"FrameRate": 56}
+    #)
+    #picam2.configure(video_config)
+
+    # Set up the H.264 encoder with the desired frame rate
+    #encoder = H264Encoder(framerate=56)
 def takeVideo(cameraObj,seconds=10,resolution=(1920, 1080),frames=30,camQuality=Quality.HIGH):
     #Note: Takes about 5GB for OS system. 16 GB for the entire SD card = 12.5GB
     #Note: Consider different Encoder
