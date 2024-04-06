@@ -5,3 +5,9 @@ Refer to this if you need the picamera2 documentation: https://datasheets.raspbe
 
 Consider increasing GPU memory: https://www.reddit.com/r/raspberry_pi/comments/67k5lv/how_to_get_more_fps_out_of_pi_camera_v2_with/
 Consider resizing window?: https://www.reddit.com/r/raspberry_pi/comments/2mu6lt/resize_picamera_preview_window/
+Resizing Tabs 1 2 3: 
+https://github.com/raspberrypi/picamera2/issues/498
+https://github.com/raspberrypi/picamera2/issues/500
+https://forums.raspberrypi.com/viewtopic.php?t=348068
+https://auth0.com/blog/image-processing-in-python-with-pillow/
+Consider using something called "ScalerCrop" in controls
