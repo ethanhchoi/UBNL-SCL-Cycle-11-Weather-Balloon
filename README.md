@@ -11,3 +11,4 @@ https://github.com/raspberrypi/picamera2/issues/500
 https://forums.raspberrypi.com/viewtopic.php?t=348068
 https://auth0.com/blog/image-processing-in-python-with-pillow/
 Consider using something called "ScalerCrop" in controls
+https://www.reddit.com/r/raspberry_pi/comments/1bbwh56/looking_for_assistance_understanding_picamera2/
