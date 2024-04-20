@@ -16,6 +16,11 @@ def alterImage(image_path,size):
   img=Image.open(image_path)
   changed_img=img.resize((size))
   changed_img.save("_"+image_path)
+def increaseRatio(image_path,ratio_increase):
+  img=Image.open(image_path)
+  width*ratio_increase,height*ratio_increase=img.size
+  changed_img=img.resize((width,height))
+  changed_img.save("_"+image_path)
 def changeImages(folder_path_dir,photo_size=(3840,2160)):
   """
   Given a directory of images change based on quality
