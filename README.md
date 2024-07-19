@@ -1,4 +1,4 @@
-# UBNL-SCL-Cycle-11-Weather-Balloon
+# UBNL-SCL-Cycle-11-Weather-Balloon-PiCamera-Code
 
 Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
 
