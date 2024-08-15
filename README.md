@@ -9,9 +9,9 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 - We could try to optimize taking more distant pictures as in increasing picture taking time
 -   Photos I managed to get using the code:
 -   ![Image of Pi Cam](https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839)
-<p>
-  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a" alt="This is a test" width="600">
-  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d" alt="This is a test" width="600">
+<p float="left">
+  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a" alt="This is a test" width="300">
+  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d" alt="This is a test" width="300">
 </p>
 ![image8](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a)
 ![image15](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d)
