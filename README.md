@@ -1,6 +1,6 @@
 # UBNL-SCL-Cycle-11-Weather-Balloon-PiCamera-Code
 
-### Desccription:
+### Description:
 This is the code and results of a that was created during my time at SCL. Unfortunately I've transferred from the University at Buffalo to the Univerrsity at Maryland so I am unable to continue working with this lab. 
 
 ### Documentation Utilized: 
