@@ -9,9 +9,9 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 - We could try to optimize taking more distant pictures as in increasing picture taking time
 #### Photos in the air
 <p>
-  <img src="https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839" width="300">
-  <img src="https://github.com/user-attachments/assets/517024f0-3214-4683-8179-226bb81a9d71" width="300">
-  <img src="https://github.com/user-attachments/assets/11f82a9c-9624-4862-b627-50305d69c37d" width="300">
+  <img src="https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839" width="400">
+  <img src="https://github.com/user-attachments/assets/517024f0-3214-4683-8179-226bb81a9d71" width="400">
+  <img src="https://github.com/user-attachments/assets/11f82a9c-9624-4862-b627-50305d69c37d" width="400">
 </p>
 
 
@@ -24,7 +24,7 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 
 #### Photo of our setup
 <div>
-  <img src="https://github.com/user-attachments/assets/58ef635b-5515-4a9c-b725-2e40ad55ed4d" height="300">
+  <img src="https://github.com/user-attachments/assets/58ef635b-5515-4a9c-b725-2e40ad55ed4d" height="500">
 </div>
 
 #### Extra Unconvered Thoughts: 
