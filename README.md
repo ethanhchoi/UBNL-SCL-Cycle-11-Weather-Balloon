@@ -7,8 +7,6 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 ### Project Results and Thoughts: 
 - I won't be in Buffalo to finish this project for the actual Balloon Launch with my SCL team(But do hit me up if you want me to participate in this project despite not being there anymore)
 - We could try to optimize taking more distant pictures as in increasing picture taking time
--   Photos I managed to get using the code:
--   ![Image of Pi Cam](https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839)
 #### Photos in the air
 <p>
   <img src="https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839" width="300">
