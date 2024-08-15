@@ -20,15 +20,15 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 </div>
 
 #### Photos in the Lab
-<p float="left">
-  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a" alt="This is a test" width="400">
-  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d" alt="This is a test" width="400">
-  <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/ade93811-f08b-4945-8ea6-f3688717040d" alt="This is a test" width="400">
-</p>
 
-#### Photo of our setup
 <div>
-  <img src="https://github.com/user-attachments/assets/58ef635b-5515-4a9c-b725-2e40ad55ed4d" height="500">
+  <img src="https://github.com/user-attachments/assets/58ef635b-5515-4a9c-b725-2e40ad55ed4d" height="600">
+  <p float="left">
+    <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a" alt="This is a test" width="200">
+    <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d" alt="This is a test" width="200">
+    <img src="https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/ade93811-f08b-4945-8ea6-f3688717040d" alt="This is a test" width="200">
+  </p>
+
 </div>
 
 #### Extra Unconvered Thoughts: 
