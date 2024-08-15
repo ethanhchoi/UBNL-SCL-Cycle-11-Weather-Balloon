@@ -1,5 +1,7 @@
 # UBNL-SCL-Cycle-11-Weather-Balloon-PiCamera-Code
-|Description Here|
+
+### Desccription:
+This is the code and results of a that was created during my time at SCL. Unfortunately I've transferred from the University at Buffalo to the Univerrsity at Maryland so I am unable to continue working with this lab. 
 
 ### Documentation Utilized: 
 Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
