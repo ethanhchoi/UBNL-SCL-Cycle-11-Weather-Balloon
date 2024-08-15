@@ -10,9 +10,10 @@ Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/pica
 #### Photos in the air
 <p>
   <img src="https://github.com/user-attachments/assets/5b4d8248-68b2-4568-91ea-ebd0d74c1839" width="300">
-  <img src="https://github.com/user-attachments/assets/061300ee-1533-4290-bebc-d20d99e0b387" width="300">
-  <img src="https://github.com/user-attachments/assets/d99f0f98-d5c4-479d-a740-8dcb33636514" width="300">
+  <img src="https://github.com/user-attachments/assets/517024f0-3214-4683-8179-226bb81a9d71" width="300">
+  <img src="https://github.com/user-attachments/assets/11f82a9c-9624-4862-b627-50305d69c37d" width="300">
 </p>
+
 
 #### Photos in the Lab
 <p float="left">
