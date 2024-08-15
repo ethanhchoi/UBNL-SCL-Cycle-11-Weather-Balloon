@@ -13,11 +13,10 @@ Thoughts during the project:
 * https://forums.raspberrypi.com/viewtopic.php?t=348068
 Consider using something called "ScalerCrop" in controls
 https://www.reddit.com/r/raspberry_pi/comments/1bbwh56/looking_for_assistance_understanding_picamera2/
-| Image             | Result                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-|Image 1|![image8](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a)|
-|Image 2|![image15](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d)|
-|Image 3|![image10](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/ade93811-f08b-4945-8ea6-f3688717040d)|
+
+![image8](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/4a2f5a45-ae3b-4753-98a2-07b69e74aa0a)
+![image15](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/e9cecfdd-0629-4224-a6ca-c7930164da5d)
+![image10](https://github.com/Ethan43443/UBNL-SCL-Cycle-11-Weather-Balloon/assets/125399829/ade93811-f08b-4945-8ea6-f3688717040d)
 
 
 
