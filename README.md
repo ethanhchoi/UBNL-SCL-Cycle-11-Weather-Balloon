@@ -1,7 +1,7 @@
 # UBNL-SCL-Cycle-11-Weather-Balloon-PiCamera-Code
 
 ### Description:
-This is the code and results of a that was created during my time at SCL. Unfortunately I've transferred from the University at Buffalo to the Univerrsity at Maryland so I am unable to continue working with this lab. As a team, we've launched a weather balloon to collect data and pictures. My main goal was to utilize the PiCamera to take pictures of the flight. Attached are the images and code used alongside fusewires and etc.  
+This is the code and results of a what was created during my time at SCL. Unfortunately I've transferred from the University at Buffalo to the Univerrsity at Maryland so I am unable to continue working with this lab. As a team, we've launched a weather balloon to collect data and pictures. My main goal was to utilize the PiCamera to take pictures of the flight. Attached are the images and code used alongside fusewires and etc.  
 
 ### Documentation Utilized: 
 Utilized PiCamera2 Documentation: https://datasheets.raspberrypi.com/camera/picamera2-manual.pdf
